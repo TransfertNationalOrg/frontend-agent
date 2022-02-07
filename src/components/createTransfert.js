@@ -37,8 +37,7 @@ export default function CreateTransfert() {
             beneficiaire,
             motif,
             notification,
-            frais,
-            total
+            frais
         }).then(() => {
             history.push('/read')
         })
@@ -85,8 +84,7 @@ export default function CreateTransfert() {
                     </Form.Field>
                 </Link>
                 <br/><br/>
-                <h5>------ Total à payer ------</h5>
-                <div>{montant}</div>
+                
                 <Button onClick={postData} type='submit'>Enregistrer</Button>
             </Form>
         </div>
